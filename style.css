@@ -1,0 +1,38 @@
+nav a {
+    text-decoration: none; /*밑줄 삭제*/
+    color: black;
+    margin: 2em;
+}
+
+nav:first-child {   /*첫 번째 nav태그, 띄어쓰기 하면 안됨!*/
+    display : flex;
+    justify-content:center; /*가로축을 중심으로*/
+}
+
+nav:nth-child(2) {  /*n번째 nav태그, ()안에 숫자 표기*/
+    display: flex;
+    flex-direction: column; /*column : 기둥, 가로를 세로로 바꾸겠다*/
+    align-items: center; /*세로축을 중심으로*/
+}
+
+#horizontal-underline {
+    position: absolute;
+    width: 0;
+    background-color: pink;
+    border-radius: 3px; /*테두리를 둥글게 만드는 속성*/
+    top: 0;
+    left: 0px;
+    height: 4px;
+    transition: 0.3s; /*transition을 0.3초 걸리게 해줌*/
+}
+
+#vertical-underline {
+    position: absolute;
+    width: 0;
+    background-color: yellow;
+    border-radius: 3px;
+    top: 0;
+    left: 0px;
+    height: 4px;
+    transition: 0.3s;
+}
